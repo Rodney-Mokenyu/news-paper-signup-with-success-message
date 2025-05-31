@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --red: hsl(4, 100%, 67%);
+    --blue-800: hsl(234, 29%, 20%);
+    --blue-700: hsl(235, 18%, 26%);
+    --grey: hsl(0, 0%, 58%);
+    --white: hsl(0, 0%, 100%);
+}
+
+.attribuion {
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+}
+html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--blue-700);
+    font-family: 'Roboto', sans-serif;  
+}
+
+.body h1 {
+    margin: 1rem 0;
+    font-weight: 600;
+}
+#feature-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.feature-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.feature-item img {
+  vertical-align: middle;
+}
+
+.feature-item p {
+  margin: 0;
+ 
+}
+
+/* make the email error message display none by default */
+#email-validation-error {
+    display: none;
+    color: var(--red);
+    font-size: 0.875rem;
+    margin-top: 0.5rem;
+}
+
+#subscription-button {
+    border: none;
+    border-radius: 0.4rem;
+    padding: 0.5rem;
+    color: var(--white);
+    background-color: var(--blue-800);
+}
+
+@media (min-width: 768px) {
+    main {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "left right";
+        gap: 2rem;
+        align-items: center;
+        border-radius: 1rem;
+        background-color: var(--white);
+        max-width: 800px !important;
+        margin-inline: auto;
+        padding: 2rem !important;
+    }
+
+    .body {
+        grid-area: left;
+    }
+
+    .head {
+        grid-area: right;
+    }
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+  <link rel="shortcut icon" href="./assets/images/favicon-32x32.png" type="image/png">
+
+  <!-- Normalize CSS for cross-browser consistency -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"> 
+
+   
+  <!-- Bootstrap 5.3.3 CSS CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Main stylesheet -->
+   <link rel="stylesheet" href="./assets/css/styles.css"> 
+
+  <!-- Google Fonts: Roboto -->
+   <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet"> 
+ 
+</head>
+<body>
+
+  <!-- Sign-up form start -->
+  <main class="container">
+    <section class="head">
+       <picture>
+        <source media="(min-width: 768px)" srcset="assets/images/illustration-sign-up-desktop.svg">
+        <img src="assets/images/illustration-sign-up-mobile.svg" alt="Header Image" class="img-fluid">
+      </picture>
+    </section>
+
+    <section class="body">
+      <h1 class="body-heading">Stay updated!</h1>
+      <div class="body-details">
+        <p class="body-text">Join 60,000+ product managers receiving monthly updates on:</p>
+        <ul id="feature-list">
+            <li class="feature-item">
+              <img src="assets/images/icon-list.svg" alt="Checkmark icon">
+              <p>Product discovery and building what matters</p>
+            </li>
+            <li class="feature-item">
+              <img src="assets/images/icon-list.svg" alt="Checkmark icon">
+              <p>Measuring to ensure updates are a success</p>
+            </li>
+            <li class="feature-item">
+              <img src="assets/images/icon-list.svg" alt="Checkmark icon">
+              <p>And much more!</p>
+            </li>
+        </ul>
+
+        <div class="d-flex justify-content-between align-items-center">
+          <label for="email-input" class="form-label mb-0">Email address</label>
+          <span id="email-validation-error" class="text-danger small">Valid email required</span>
+        </div>
+        <input type="email" class="form-control my-1 mb-3" placeholder="ash#loremcompany.com" aria-label="Email address" id="email-input">
+        <button class="w-100" id="subscription-button" type="button">Subscribe to monthly newsletter</button>
+      </div>
+    </section>
+    
+  </main>
+
+  <!-- Sign-up form end -->
+  <footer class="attribution my-3">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Oracle of Omaha</a>.
+  </footer>
+
+  <script src="./assets/js/main.js"></script>
+</body>
+</html>
